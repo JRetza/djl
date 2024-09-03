@@ -149,32 +149,32 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Download compiledJNI Mac
-        uses: actions/download-artifact@v1
+        uses: actions/download-artifact@v4.1.7
         with:
           name: jnilib-macOS
           path: jnilib
       - name: Download releaseJNI Windows GPU
-        uses: actions/download-artifact@v1
+        uses: actions/download-artifact@v4.1.7
         with:
           name: jnilib-Windows-GPU
           path: jnilib
       - name: Download compiledJNI Windows
-        uses: actions/download-artifact@v1
+        uses: actions/download-artifact@v4.1.7
         with:
           name: jnilib-Windows
           path: jnilib
       - name: Download releaseJNI Linux GPU
-        uses: actions/download-artifact@v1
+        uses: actions/download-artifact@v4.1.7
         with:
           name: jnilib-Linux-GPU
           path: jnilib
       - name: Download compiledJNI Linux CPU
-        uses: actions/download-artifact@v1
+        uses: actions/download-artifact@v4.1.7
         with:
           name: jnilib-Linux
           path: jnilib
       - name: Download compiledJNI Precxx11 CPU/GPU
-        uses: actions/download-artifact@v1
+        uses: actions/download-artifact@v4.1.7
         with:
           name: jnilib-Linux-precxx11
           path: jnilib/precxx11
